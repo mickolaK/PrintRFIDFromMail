@@ -57,13 +57,14 @@ namespace ReceiveMail
 
             try
             {
-                var client = new System.Net.Sockets.TcpClient("172.18.8.150", 9100);
+                /* var client = new System.Net.Sockets.TcpClient("172.18.8.150", 9100);
                 System.IO.StreamWriter writer = new System.IO.StreamWriter(client.GetStream());
                 writer.Write(RFIDZPLString);
                 writer.Flush();
                 writer.Close();
                 client.Close();
-                Console.WriteLine("------------END------------");
+                Console.WriteLine("------------END------------");*/
+            
             }
             catch (Exception e)
             {
