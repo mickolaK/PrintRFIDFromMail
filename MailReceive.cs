@@ -1,19 +1,24 @@
-﻿using Spire.Email;
+﻿using System;
+using System.Configuration;
+using Spire.Email;
 using Spire.Email.Pop3;
-using System;
+
 
 public class mailReceive
 {
 	public mailReceive()
 	{
+
+
+
         Pop3Client pop = new Pop3Client
         {
             //Set host, username, password etc. for the client
-            Host = "pop.mail.ru",
-            Username = "mickola1983@mail.ru",
-            Password = "best4metoo",
-            Port = 995,
-            EnableSsl = true
+            Host = ConfigurationManager.AppSettings["host"],
+            Username = ConfigurationManager.AppSettings["Username"],
+            Password = ConfigurationManager.AppSettings["Password"],
+            Port = Int32.Parse(ConfigurationManager.AppSettings["Port"]),
+            EnableSsl = Convert.ToBoolean(ConfigurationManager.AppSettings["EnableSSL"])
         };
         //Connect the server
         pop.Connect();

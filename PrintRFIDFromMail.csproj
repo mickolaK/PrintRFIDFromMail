@@ -41,6 +41,7 @@
       <HintPath>packages\Spire.Email.3.2.0\lib\net40\Spire.License.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -90,6 +91,7 @@
     <None Include=".vs\slnx.sqlite" />
     <None Include=".vs\tasks.vs.json" />
     <None Include=".vs\VSWorkspaceState.json" />
+    <None Include="App.config" />
     <None Include="packages.config" />
     <None Include="README.md" />
   </ItemGroup>
