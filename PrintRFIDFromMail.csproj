@@ -96,7 +96,7 @@
     <None Include="README.md" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MailReceive.cs" />
+    <Compile Include="Mail.cs" />
     <Compile Include="PrintRFID.cs" />
     <Compile Include="Program.cs" />
   </ItemGroup>

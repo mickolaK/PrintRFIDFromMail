@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Configuration;
+using System.Net.Sockets;
+using System.IO;
 
 public static class PrintRFID
 {
@@ -8,8 +10,8 @@ public static class PrintRFID
         Console.WriteLine("-------PRINT ZPL--_--------------");
         try
         {
-            var client = new System.Net.Sockets.TcpClient("172.18.8.150", 9100);
-            System.IO.StreamWriter writer = new System.IO.StreamWriter(client.GetStream());
+            var client = new TcpClient(ConfigurationManager.AppSettings["PrinterIP"], Int32.Parse(ConfigurationManager.AppSettings["PrinterPort"]));
+            StreamWriter writer = new System.IO.StreamWriter(client.GetStream());
             writer.Write(RFIDZPLString);
             writer.Flush();
             writer.Close();
