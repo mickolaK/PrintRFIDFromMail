@@ -22,12 +22,11 @@ public static class Mail
         {
             pop.Connect();
             int messageCount = pop.GetMessageCount();
+            Console.WriteLine("Subject added to list:");
             for (int i = 1; i <= messageCount; i++)
             {
                 MailMessage message = pop.GetMessage(i);
-                Console.WriteLine($"------------------ HEADERS #{i} ---------------");
-                Console.WriteLine("Subject: " + message.Subject);
-                Console.WriteLine("------------------- END ------------------");
+                Console.WriteLine($"{i}. { message.Subject}");
                 RFIDStrings.Add(message.Subject);
             }
         }

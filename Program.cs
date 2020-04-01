@@ -12,7 +12,8 @@ namespace ReceiveMail
     {
         static void Main(string[] args)
         {
-            var mail = new mailReceive();
+            List<string> list = Mail.ReceiveMailSubject();
+            PrintRFID.PrintRFIDString(list);
         }
     }
 }
