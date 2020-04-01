@@ -6,11 +6,8 @@ using Spire.Email.Pop3;
 
 public class mailReceive
 {
-	public mailReceive()
-	{
-
-
-
+    public mailReceive()
+    {
         Pop3Client pop = new Pop3Client
         {
             //Set host, username, password etc. for the client

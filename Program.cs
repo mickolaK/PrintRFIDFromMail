@@ -12,12 +12,7 @@ namespace ReceiveMail
     {
         static void Main(string[] args)
         {
-
-
-           
-
-           
-
+            var mail = new mailReceive();
         }
     }
 }

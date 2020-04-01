@@ -102,6 +102,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include=".git\ms-persist.xml" />
+    <Content Include="ZPLCommands.txt" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include=".git\objects\info\" />

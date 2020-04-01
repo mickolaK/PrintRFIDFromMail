@@ -1,0 +1,3 @@
+﻿        string ZPLString = @"^XA^MMP^PW300^LS0^LT0^FT10,60^APN,30,30^FH\^FDSAMPLE TEXT^FS^XZ";
+        string ZPLString = @"^XA^FO100,550^BC^FD12345678^FS^XZ";
+        string RFIDZPLString = @"^XA^FO50,50^A0N,65^FDSimple write example^FS^RFW,A^FD00 rfid data^FS^XZ";
